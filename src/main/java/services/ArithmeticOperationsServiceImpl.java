@@ -1,46 +1,28 @@
 package services;
 
+import java.util.List;
+
+import org.apache.commons.collections4.CollectionUtils;
+
+
 /**
  * @author seirlisk
  *
  */
 public class ArithmeticOperationsServiceImpl implements ArithmeticOperationsService {
 
-	/**
-	 * @param a
-	 * @param b
-	 * @return
+	
+	/* (non-Javadoc)
+	 * @see services.ArithmeticOperationsService#sum(java.util.List)
 	 */
-	public int multiply(int a, int b) {
-		return a*b;
+	public int sum(List<Integer> list) {
+		if(CollectionUtils.isEmpty(list)) {
+			return 0;
+		}
+		return -1;
 	}
 	
-	/**
-	 * @param a
-	 * @param b
-	 * @return
-	 */
-	public double divide(int a, int b) {
-		return 0;
-	}
 	
-	/**
-	 * @param a
-	 * @param b
-	 * @return
-	 */
-	public int add(int a, int b) {
-		return 0;
-	}
-	
-	/**
-	 * @param a
-	 * @param b
-	 * @return
-	 */
-	public int minus(int a, int b) {
-		return 0;
-	}
 	
 	
 }

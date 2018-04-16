@@ -1,14 +1,18 @@
 package services;
 
+import java.util.List;
+
 public interface ArithmeticOperationsService {
 
-	int multiply(int a, int b);
 	
-	double divide(int a, int b);
+	/**
+	 * Return the sum of a colllection's element.
+	 * 
+	 * @param list
+	 * @return
+	 */
+	int sum(List<Integer> list);	
 	
-	int add(int a, int b);
-	
-	int minus(int a, int b);
 	
 	
 }
