@@ -19,7 +19,9 @@ public class ArithmeticOperationsServiceImpl implements ArithmeticOperationsServ
 		if(CollectionUtils.isEmpty(list)) {
 			return 0;
 		}
-		return -1;
+		
+		return list.stream().mapToInt(Integer::intValue).sum();
+		//return -1;
 	}
 	
 	
